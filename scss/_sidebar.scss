@@ -1,0 +1,109 @@
+/* Sidebar */
+
+.mdc-persistent-drawer {
+	@extend .mdc-elevation--z4;
+	&--open,
+	&__drawer {
+		width: $mdc-persistent-drawer-custom-width;
+	}
+	&__drawer {
+		border-right: 0;
+	}
+	&__toolbar-spacer {
+		background: $mdc-theme-primary;
+		padding: 0 0 0 1.75rem;
+	}
+	.brand-logo {
+		width: 100%;
+		img {
+			width: 165px;
+		}
+	}
+  .mdc-drawer-item {
+		cursor: pointer;
+		display: block;
+		height: auto;
+		padding: .5rem 1rem;
+		&:before{
+			z-index: -1;
+		}
+		.mdc-drawer-link {
+			height: 48px;
+			line-height: 48px;
+			padding: 0 .75rem;
+			@include display-flex();
+			@include align-items(center);
+			font-size: .8125rem;
+			text-decoration: none;
+			color: $mdc-drawer-link-color;
+			i {
+				@extend .mdc-theme--primary;
+				&.mdc-drawer-item-icon {
+					font-size: 1.25rem;
+					margin-right: 1rem;
+				}
+			}
+			.mdc-drawer-arrow {
+				margin-left: auto;
+			}
+			&.active {
+				@extend .mdc-elevation--z3;
+			}
+		}
+		.mdc-expansion-panel {
+			display: none;
+			height: 0;
+			transition: height .3s ease;
+			&.expanded {
+				display: block;
+				height: auto;
+			}
+		}
+		&.mdc-drawer-profile {
+			background: url("../images/cover/bg_profile.jpg");
+			background-size: cover;
+			padding: 2.5rem .5rem;
+			margin-bottom: 1.75rem;
+			i {
+				@extend .text-white;
+				vertical-align: middle;
+				font-size: 1.5rem;
+				line-height: 10px;
+			}
+			.mdc-drawer-link {
+				color: $white;
+				line-height: 1;
+				img {
+					border-radius: 100%;
+					width: 45px;
+					height: 45px;
+				}
+				.profile-detail {
+					margin-left: .5rem;
+					.profile-name,
+					.profile-email {
+						margin-top: 0;
+					}
+					.profile-name {
+						margin-bottom: .5rem;
+					}
+					.profile-email {
+						font-weight: 300;
+						font-size: .75rem;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		&.purchase-link{
+			.mdc-drawer-link{
+				@include border-radius(5px);
+				color: $white;
+				text-align: center;
+				display: block;
+				background: url(../images/cover/bg_profile.jpg);
+				background-size: cover;
+			}
+		}
+	}
+}

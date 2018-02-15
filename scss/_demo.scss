@@ -1,0 +1,97 @@
+/* Demo Styles */
+.template-demo {
+  > .mdc-button {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  > .mdc-linear-progres {
+    margin-top: 10px;
+  }
+
+  > .mdc-switch {
+    margin-top: 30px;
+    margin-right: 40px;
+  }
+
+  > .mdc-snackbar {
+    position: relative;
+    left: auto;
+    transform: none;
+  }
+
+  > .mdc-menu-anchor {
+    margin-top: 1rem;
+  }
+}
+
+.icon-demo {
+  i {
+    margin: 1rem;
+  }
+}
+
+.dialog-demo {
+  position: relative;
+  width: 320px;
+  z-index: auto;
+  margin: auto;
+}
+
+
+// card demos
+.demo-card {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.hero {
+  min-height: 480px;
+}
+
+.demo-card {
+  max-width: 21.875rem;
+  margin-bottom: 48px;
+}
+@media(min-width: 768px) {
+  .demo-card {
+    margin-bottom: 24px;
+  }
+}
+
+.demo-card__16-9-media {
+  background-image: url("../images/cover/16-9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 12.313rem;
+}
+
+.demo-card--small .mdc-card__media {
+  background-image: url("../images/cover/1-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 10.938rem;
+}
+
+.demo-card--bg-demo {
+  height: 21.875rem;
+  background-image: url("../images/cover/1-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.demo-card--bg-demo .mdc-card__actions,
+.demo-card--bg-demo .mdc-card__primary {
+  background: rgba(0, 0, 0, .4);
+}
+
+.mdc-text-field--invalid .mdc-text-field__input{
+  border-color: $red;
+}
+
+.CodeMirror {
+  font-size: 1rem;
+  height: auto;
+  text-align: left;
+}

@@ -1,0 +1,26 @@
+/* Checkbox */
+
+.mdc-checkbox {
+  &.demo-checkbox--custom-all {
+    &::after,
+    &::before {
+      background: red;
+    }
+
+    .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate) ~ .mdc-checkbox__background {
+      border-color: red;
+      background-color: rgba(244, 67, 54, 0.25);
+    }
+
+    .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background {
+      border-color: red;
+      background-color: red;
+    }
+
+    .mdc-checkbox__background {
+      &:before {
+        background: red;
+      }
+    }
+  }
+}

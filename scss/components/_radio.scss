@@ -1,0 +1,19 @@
+
+
+.mdc-radio {
+  &.demo-radio--custom {
+    &:after,&:after{
+      background-color: red;
+    }
+    .mdc-radio__native-control:enabled:checked + .mdc-radio__background .mdc-radio__outer-circle{
+      border-color: red;
+    }
+    .mdc-radio__native-control:enabled:checked + .mdc-radio__background .mdc-radio__outer-circle{
+      border-color: red;
+    }
+    .mdc-radio__native-control:enabled + .mdc-radio__background .mdc-radio__inner-circle{
+      background-color: orange;
+    }
+  }
+}
+

@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.body-wrapper {
+  @include display-flex;
+  @include flex-direction(row);
+
+  .page-wrapper {
+    width: 100%;
+    @include display-flex();
+    @include flex-direction(column);
+
+    .content-wrapper {
+      padding: $content-wrapper-padding;
+      min-height: calc(100vh - #{$mdc-toolbar-row-height} - #{$footer-height});
+      background: $content-bg;
+      @include flex-grow(1);
+    }
+
+    .footer {
+      padding: $content-wrapper-padding;
+    }
+  }
+}

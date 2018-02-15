@@ -1,0 +1,42 @@
+.chartjs-legend {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    @include display-flex;
+    @include align-items(center);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+
+    li {
+      margin-right: 6%;
+      @include display-flex;
+      @include align-items(center);
+      color: #3c4858;
+
+      span {
+        height: 10px;
+        width: 10px;
+        margin-right: 0.6rem;
+        display: inline-block;
+        font-size: $default-font-size;
+        @include border-radius(50px);
+      }
+    }
+  }
+
+  .rtl & {
+    ul {
+      padding-right: 0;
+
+      li {
+        margin-right: 0;
+        margin-left: 8%;
+
+        span {
+          margin-right: 0;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

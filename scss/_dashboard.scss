@@ -1,0 +1,33 @@
+/* Dashboard */
+
+.mdc--tile {
+  width: 86px;
+  height: 86px;
+  @include display-flex;
+  @include align-items(center);
+  @include justify-content(center);
+  &.mdc--tile-danger {
+    background: #e53a36;
+    -webkit-box-shadow: 0px 9px 19px -9px rgba(229,58,54,0.65);
+    -moz-box-shadow: 0px 9px 19px -9px rgba(229,58,54,0.65);
+    box-shadow: 0px 9px 19px -9px rgba(229,58,54,0.65);
+  }
+  &.mdc--tile-success {
+    background: #4ca74f;
+    -webkit-box-shadow: 0px 9px 19px -9px rgba(76, 167 ,79,0.65);
+    -moz-box-shadow: 0px 9px 19px -9px rgba(76, 167 ,79,0.65);
+    box-shadow: 0px 9px 19px -9px rgba(76, 167 ,79,0.65);
+  }
+  &.mdc--tile-warning {
+    background: #fea11d;
+    -webkit-box-shadow: 0px 9px 19px -9px rgba(254, 161 ,29,0.65);
+    -moz-box-shadow: 0px 9px 19px -9px rgba(254, 161 ,29,0.65);
+    box-shadow: 0px 9px 19px -9px rgba(254, 161 ,29,0.65);
+  }
+  &.mdc--tile-primary {
+    background: #11b2c6;
+    -webkit-box-shadow: 0px 9px 19px -9px rgba(17, 178 ,198,0.65);
+    -moz-box-shadow: 0px 9px 19px -9px rgba(17, 178 ,198,0.65);
+    box-shadow: 0px 9px 19px -9px rgba(17, 178 ,198,0.65);
+  }
+}
