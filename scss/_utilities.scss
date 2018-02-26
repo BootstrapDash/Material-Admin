@@ -345,6 +345,9 @@
 
   .mdc-button {
     margin-right: 10px;
+    &:not(.mdc-button--stroked){
+      color: $white;
+    }
   }
 }
 

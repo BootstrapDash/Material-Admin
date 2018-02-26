@@ -38,5 +38,9 @@
         }
       }
     })
+
+    $(".mdc-toolbar__menu-icon").on("click", function(){
+      $(".body-wrapper .page-wrapper .content-wrapper").toggleClass("drawer-minimized");
+    });
   });
 })(jQuery);

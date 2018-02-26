@@ -17,6 +17,10 @@ body {
       min-height: calc(100vh - #{$mdc-toolbar-row-height} - #{$footer-height});
       background: $content-bg;
       @include flex-grow(1);
+
+      &.drawer-minimized {
+        padding-left: 0px;
+      }
     }
 
     .footer {

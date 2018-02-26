@@ -1,5 +1,7 @@
 /* Buttons */
-
+.mdc-button--raised:not(:disabled),.mdc-button--unelevated:not(:disabled),.mdc-button{
+  color: $white;
+}
 .mdc-button {
   &.secondary-text-button {
     @include mdc-button-ink-color($mdc-theme-secondary);

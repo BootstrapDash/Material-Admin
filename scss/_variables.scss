@@ -15,8 +15,8 @@ $green: green;
 ////////// COLOR VARIABLES //////////
 
 ////////// THEME COLORS //////////////
-$mdc-theme-primary: #0057ff;
-$mdc-theme-secondary: #e53935;
+$mdc-theme-primary: #00a9f4;
+$mdc-theme-secondary: #e52d27;
 ////////// THEME COLORS //////////////
 
 ////////// SOCIAL COLORS //////////
@@ -39,7 +39,6 @@ $social-colors: (
 ////////// FONT VARIABLES //////////
 
 $default-font-size: 0.875rem; // 14px as base font size
-$content-wrapper-padding: 30px 25px;
 
 ////////// FONT VARIABLES //////////
 
@@ -63,3 +62,5 @@ $footer-height: 40px;
 $mdc-persistent-drawer-custom-width: 255px;
 $mdc-drawer-link-color: #212121;
 ////////// SIDEBAR /////////
+
+$content-wrapper-padding: 30px 0px 0px $mdc-persistent-drawer-custom-width;
