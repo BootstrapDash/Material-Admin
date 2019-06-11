@@ -4,30 +4,30 @@
   "description": "",
   "main": "index.html",
   "dependencies": {
-    "chart.js": "2.6.0",
-    "del": "2.2.2",
-    "jquery": "3.2.1",
+    "chart.js": "^2.8.0",
+    "del": "^4.1.1",
+    "jquery": "^3.4.1",
     "material-components-web": "^0.27.0",
-    "mdi": "2.0.46",
-    "progressbar.js": "1.0.1"
+    "mdi": "^2.2.43",
+    "progressbar.js": "^1.0.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.16.0",
+    "browser-sync": "^2.26.7",
     "compass-mixins": "^0.12.10",
     "gulp": "^3.9.1",
     "gulp-bower-src": "^0.1.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-filter": "^4.0.0",
-    "gulp-inject": "4.2.0",
-    "gulp-inject-partials": "^1.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^6.0.0",
+    "gulp-inject": "^5.0.2",
+    "gulp-inject-partials": "^1.0.5",
     "gulp-minify-css": "^1.2.4",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
     "main-bower-files": "^2.13.1",
     "minimatch": "^3.0.4",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^2.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
