@@ -1,0 +1,49 @@
+/* === Import template variables === */
+@import "./variables";
+@import "material-components-web/material-components-web";
+
+
+/* === SCSS Compass Functions === */
+@import "../node_modules/compass-mixins/lib/compass";
+@import "../node_modules/compass-mixins/lib/animate";
+
+
+/* === Template mixins === */
+@import "../shared/mixins/buttons";
+@import "../shared/mixins/color";
+
+/* === Core Styles === */
+@import "../shared/reset";
+@import "../shared/fonts";
+@import "../shared/functions";
+@import "../shared/typography";
+@import "../shared/theme";
+@import "../shared/utilities";
+@import "../shared/demo";
+
+
+/* === Components === */
+@import "../shared/components/buttons";
+@import "../shared/components/cards";
+@import "../shared/components/checkbox";
+@import "../shared/components/forms";
+@import "../shared/components/menu";
+@import "../shared/components/select";
+@import "../shared/components/switch";
+@import "../shared/components/tables";
+@import "../shared/components/tabs";
+@import "../shared/components/textfield";
+
+/* === Sample screens === */
+@import "../shared/sample-screens/error";
+@import "../shared/sample-screens/auth";
+
+/* === Plugin Overides === */
+@import "../shared/components/plugin-overides/code-mirror";
+
+@import './dashboard';
+@import './navbar';
+@import './sidebar';
+@import './footer';
+@import './layout';
+@import '../vertical/vertical-wrapper';

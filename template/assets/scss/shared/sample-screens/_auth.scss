@@ -1,0 +1,16 @@
+.auth-page {
+  width: 100%;
+  .mdc-text-field {
+    &,
+    &::before {
+      background-color: transparent;
+    }
+    .mdc-text-field__input {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .mdc-floating-label {
+      left: 0;
+    }
+  }
+}

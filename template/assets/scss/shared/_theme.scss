@@ -1,0 +1,5 @@
+@each $color, $value in $theme-colors {
+  &.mdc-theme--#{$color} {
+    color: $value;
+  }
+}

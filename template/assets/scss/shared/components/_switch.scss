@@ -1,0 +1,20 @@
+.mdc-switch {
+  @each $color, $value in $theme-colors {
+    &.mdc-switch--#{$color} {
+      @include mdc-switch-toggled-on-track-color($value);
+      @include mdc-switch-toggled-on-thumb-color($value);
+      .mdc-switch__thumb-underlay {
+        &::before {
+          background-color: $value;
+        }
+      }
+      &:not(.mdc-switch--checked) {
+        .mdc-switch__thumb-underlay {
+          &::before {
+            background-color: $mdc-switch-toggled-off-ripple-color;
+          }
+        }
+      }
+    }
+  }
+}

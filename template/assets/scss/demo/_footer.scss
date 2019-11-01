@@ -1,0 +1,12 @@
+footer {
+  padding: 0 30px 16px;
+  a {
+    color: $text-body;
+  }
+  .vertical-divider {
+    width: 1px;
+    height: 60%;
+    background: $text-body;
+    margin: 0 18px;
+  }
+}

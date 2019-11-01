@@ -1,0 +1,273 @@
+.mdc-card {
+  &.info-card {
+    position: relative;
+    padding: 17px 25px;
+    .card-inner {
+      margin-right: 25%;
+      .card-title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 9px;
+      }
+      .card-icon-wrapper {
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 57px;
+        height: 57px;
+        border-radius: 2px;
+        background-color: theme-color(success);
+        @include display-flex;
+        @include align-items(center);
+        @include justify-content(center); 
+        box-shadow: 0 0 10px 5px rgba(theme-color(success), .35);
+        @media(max-width: 992px) {
+          right: 20px;
+         }
+        i {
+          color: #fff;
+          font-size: 30px;
+        }
+      }
+    }
+    @each $color, $value in $theme-colors {
+      &.info-card--#{$color} {
+        .card-inner {
+          .card-icon-wrapper {
+            background-color: $value;
+            box-shadow: 0 0 10px 5px rgba($value, .35);
+          }
+        }
+      }
+    }
+  }
+  .options-icon,
+  .refresh-icon {
+    font-size: 20px;
+    color: #bbbbbb;
+    cursor: pointer;
+  }
+}
+
+.statitics-card {
+  border-right: 1px solid $border-color;
+  @media(max-width: 767px) {
+    border-right: none; 
+  }
+  @media(max-width: 991px) {
+    border-bottom: 1px solid $border-color;
+  }
+  .statitics-card-header {
+    i {
+      font-size: 18px;
+      color: #a9a7a7;
+    }
+  }
+  .statitics-card-content {
+    i {
+      font-size: 40px;
+    }
+  }
+}
+
+.revenue-tab {
+  .mdc-tab-bar {
+    .mdc-tab-indicator {
+      .mdc-tab-indicator__content--underline {
+        border: none;
+      }
+    }
+  }
+  &.mdc-tab-wrapper {
+    .content {
+      padding: 0;
+    }
+  }
+}
+
+.bullet-rounded {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 100px;
+}
+
+.product-card {
+  .product-box {
+    position: relative;
+    padding: 0px 31px 25px 31px;
+    display: flex;
+    justify-content: center;
+    .product-name-box {
+      position: absolute;
+      width: 83%;
+      color: #ffffff;
+      transform: translateY(-50%);
+      @each $color, $value in $theme-colors {
+        .product-name-box-#{$color} {
+          height: 75px;
+          box-shadow: 0 0 10px 5px rgba($value, 0.35);
+          background: $value;
+          transition: all 0.25s ease-in-out;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.03);
+          }
+        } 
+      }
+      .add-product-button {
+        position: absolute;
+        right: -17px;
+        top: 25%;
+      }
+    }
+    .product-description-box {
+      margin-top: 60px;
+      .product-description-box-text {
+        color: #3c4858;
+      }
+    } 
+  }
+}
+
+.earning-flot-chart {
+  height: 237px;
+}
+
+.revenue-world-map {
+  width: 100%;
+  height: 200px;
+}
+
+.flag-icon-container {
+  display: inline-block;
+  .flag-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-size: cover;
+  }
+}
+
+.dashboard-table {
+  &.table {
+    tbody,
+    thead {
+      tr {
+        td,
+        th {
+          text-align: left;
+          &:first-child{
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+        } 
+      } 
+    } 
+  } 
+  &.sales-table {
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    &.table {
+      thead,
+      tbody {
+        tr {
+          th,
+          td {
+            color: inherit;
+            padding: 10px 10px;
+            font-weight: normal;
+          }
+          &:hover {
+            background: #f8f6ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-list {
+  .product-list-header {
+    padding: 1.5rem 1.5rem 1rem 1.5rem
+  }
+  .product-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $border-color;
+    padding: 1rem 1.5rem;
+    .options-icon {
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
+
+.dashboard-inline-datepicker {
+  &.mdc-card {
+      background: #f9f9fa;
+      position: relative;
+      min-height: 400px;
+  }
+  .datepicker-box-top {
+    display: flex;
+    justify-content: space-between;
+    background: theme-color(info);
+    height: 70px;
+    padding: 1.5rem;
+    .mdc-button {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.to-do-list {
+  .to-do-list-header {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    i {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  .mdc-tab-bar {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.17);
+  }
+  .mdc-tab-indicator {
+    .mdc-tab-indicator__content--underline {
+      border-color: #ffffff;
+    }
+  } 
+  .to-do-list-content {
+    padding: 10px 30px;
+    background: #ffffff;
+    .to-do-list-item {
+      border: 1px solid #eeeeee;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.09);
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      &:before {
+        content: "";
+        width: 4px;
+        height: 60px;
+        background: #ffcd00;
+      }
+    }
+    .delete-icon {
+      color: #bababa;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+} 
+

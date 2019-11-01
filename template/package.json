@@ -1,0 +1,38 @@
+{
+  "name": "material",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "@mdi/font": "^4.4.95",
+    "chart.js": "^2.8.0",
+    "codemirror": "^5.49.2",
+    "flag-icon-css": "^3.4.5",
+    "jquery": "^3.4.1",
+    "jvectormap": "^2.0.4",
+    "material-components-web": "^3.2.0",
+    "material-design-icons": "^3.0.1",
+    "perfect-scrollbar": "^1.4.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "compass-mixins": "^0.12.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject": "^5.0.4",
+    "gulp-inject-partials": "^1.0.5",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "merge-stream": "^2.0.0",
+    "require-dir": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bootstrapdash",
+  "url": "http://www.bootstrapdash.com/",
+  "copyright": "",
+  "license": ""
+}

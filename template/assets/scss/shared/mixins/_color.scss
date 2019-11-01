@@ -1,0 +1,8 @@
+@each $color, $value in $theme-colors {
+  .bg-#{$color} {
+    background: $value !important;
+  }
+  .text-#{$color} {
+    color: $value !important;
+  }
+}

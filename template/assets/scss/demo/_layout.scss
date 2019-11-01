@@ -1,0 +1,41 @@
+.mdc-drawer {
+  &.mdc-drawer--open {
+    +.mdc-drawer-app-content {
+      .mdc-top-app-bar {
+        .mdc-top-app-bar__row {
+          .search-text-field {
+            display: none;
+          }
+          .menu-profile {
+            + .divider {
+              display: none;;
+            }
+          }
+          @media (max-width: 767px) {
+            .mdc-top-app-bar__title {
+              display: none;
+            }
+          }
+          @media (max-width: 991px) {
+            .mdc-top-app-bar__section-right {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  +.mdc-drawer-app-content {
+    .mdc-top-app-bar {
+      .mdc-top-app-bar__row {
+        .menu-profile {
+          + .divider {
+            @media(max-width: 991px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

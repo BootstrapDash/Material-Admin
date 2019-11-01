@@ -1,0 +1,62 @@
+.mdc-button {
+  text-transform: none;
+  white-space: nowrap;
+  &,
+  &.mdc-button--dense {
+    border-radius: 2px;
+  }
+
+  &.mdc-button--raised.mdc-ripple-upgraded,
+  &.mdc-pagination li a.mdc-ripple-upgraded.active,
+  &.mdc-button--unelevated.mdc-ripple-upgraded {
+    --mdc-ripple-fg-opacity: 0.32;
+  }
+  &.shaped-button {
+    @include border-radius(18px);
+  }
+  &.icon-button {
+    min-width: $mdc-button-height;
+    padding: 0;
+    .mdc-button__icon {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+}
+
+.mdc-typography--button {
+  text-transform: none;
+}
+
+.mdc-button {
+  @each $color, $value in $theme-colors {
+    &.text-button--#{$color} {
+      @include mdc-button-ink-color($value);
+      @include mdc-states($value);
+    }
+    &.filled-button--#{$color} {
+      @include mdc-button-filled-accessible($value);
+      @include mdc-button-ink-color(#fff);
+    }
+    &.outlined-button--#{$color} {
+      @include mdc-button-ink-color($value);
+      @include mdc-states($value);
+      @include mdc-button-outline-color($value);
+    }
+  }
+  &.text-button--light {
+    &:hover {
+      @include mdc-button-ink-color(#000);      
+    }
+  }
+  &.filled-button--light {
+    @include mdc-button-ink-color(#000);
+  }
+  &.outlined-button--light {
+    &:hover {
+      @include mdc-button-ink-color(#000);
+      border-color: rgba(#000, .2);
+    }
+  }
+}

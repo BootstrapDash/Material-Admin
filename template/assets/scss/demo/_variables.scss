@@ -1,0 +1,135 @@
+
+////////// COLOR VARIABLES //////////
+
+$content-bg: #e9eaef;
+$footer-bg: $content-bg;
+$footer-color: color(dark);
+$border-color: #e9eaef;
+$text-muted: #bababa;
+$text-body: #000;
+$body-color: #ffffff;
+$white: #fff;
+$red: #ec3432;
+$yellow: #feab00;
+$blue: #0057ff;
+$green: green;
+////////// COLOR VARIABLES //////////
+
+////////// THEME COLORS //////////////
+$mdc-theme-primary: #7a00ff;
+$mdc-theme-secondary: #ff420f;
+
+
+$theme-colors: (
+  primary:      $mdc-theme-primary,
+  secondary:    $mdc-theme-secondary,
+  info:         #00bbdd,
+  success:      #00b67a,
+  warning:      #ffc107,
+  danger:       $mdc-theme-secondary,
+  light:        #f0f1f1,
+  dark:         #3e4b5b,
+  white:        #fff
+);
+
+
+////////// THEME COLORS //////////////
+
+////////// SOCIAL COLORS //////////
+
+$social-colors: (
+  twitter: #2caae1,
+  facebook: #3b579d,
+  google: #dc4a38,
+  linkedin: #0177b5,
+  pinterest: #cc2127,
+  youtube: #e52d27,
+  github: #333333,
+  behance: #1769ff,
+  dribbble: #ea4c89,
+  reddit: #ff4500
+);
+
+////////// SOCIAL COLORS //////////
+
+////////// FONT VARIABLES //////////
+
+$default-font-size: 0.875rem; // 14px as base font size
+
+////////// FONT VARIABLES //////////
+
+////////// SWITCH ////////////////////
+$mdc-switch-baseline-theme-color: primary;
+$mdc-switch-toggled-off-ripple-color: #e9e9e9;
+
+////////// CHECKBOX ////////////////
+$mdc-checkbox-baseline-theme-color: primary;
+
+
+////////// SLIDER /////////////////
+$mdc-slider-baseline-rail-opacity: .26;
+
+
+////////// TABS ////////////////////
+$mdc-tab-height: 36px;
+$tab-panel-padding-x: 1rem;
+$tab-panel-padding-y: 1rem;
+$mdc-tab-text-label-color-default: #bababa;
+
+
+////////// TABLES //////////
+$table-head-font-size: 14px;
+$table-body-font-size: 14px;
+$table-padding : 14px 10px;
+$table-head-color: lighten(#000,46%);
+$table-body-color: lighten(#000,13%);
+$table-cell-spacing: 30px;
+$table-hover-color: #EEEEEE;
+////////// TABLES //////////
+
+////////// TYPOGRAPHY ///////
+$type1:  'Roboto', sans-serif;
+
+////////// FOOTER //////////
+$footer-height: 40px;
+////////// FOOTER //////////
+
+////////// SIDEBAR /////////
+$mdc-drawer-width: 243px;
+$mdc-drawer-list-item-spacing: 7px;
+$mdc-drawer-list-item-margin: $mdc-drawer-list-item-spacing 16px $mdc-drawer-list-item-spacing 27px;
+$mdc-drawer-link-color: #fff;
+////////// SIDEBAR /////////
+
+$content-wrapper-padding: 30px 0px 0px $mdc-drawer-width;
+
+
+$mdc-card-bg: #fff;
+$mdc-card-padding: 32px 28px;
+
+$mdc-text-field-height: 45px;
+$mdc-button-height: 36px;
+$mdc-button-horizontal-padding: 16px;
+
+$mdc-list-side-padding: 26px;
+
+$mdc-layout-grid-default-gutter: (
+  desktop: 24px,
+  tablet: 16px,
+  phone: 16px
+);
+
+$mdc-layout-grid-default-margin: (
+  desktop: 13px,
+  tablet: 9px,
+  phone: 6px
+);
+
+$mdc-layout-grid-breakpoints: (
+  wide-desktop: 1200px,
+  desktop: 992px,
+  tablet: 768px,
+  phone: 0px
+);
+
+$mdc-menu-min-width: 170px;

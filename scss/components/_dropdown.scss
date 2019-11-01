@@ -1,9 +1,0 @@
-/* Dropdown */
-
-.mdc-simple-menu {
-  &--right {
-    top: 100% !important; //Override the position set through js
-    right: 0;
-    left: auto !important;
-  }
-}

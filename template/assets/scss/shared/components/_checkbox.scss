@@ -1,0 +1,41 @@
+.mdc-checkbox {
+  @each $color, $value in $theme-colors {
+    &.mdc-checkbox--#{$color} {
+      &::before,
+      &::after {
+        background-color: $value;
+      }
+      .mdc-checkbox__native-control {
+        &:enabled {
+          &:checked {
+            ~ .mdc-checkbox__background {
+              border-color: $value;
+              background-color: $value;
+              &::before {
+                background-color: $value;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.mdc-checkbox--light {
+    .mdc-checkbox__background {
+      .mdc-checkbox__checkmark {
+        color: theme-color(dark);
+      }
+    }
+    .mdc-checkbox__native-control {
+      &:enabled {
+        &:not(:checked) {
+          &:not(:indeterminate) {
+            ~ .mdc-checkbox__background {
+              border-color: theme-color(light);
+            }
+          }
+        }
+      }
+    }
+  }
+}

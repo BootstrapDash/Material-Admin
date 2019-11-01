@@ -1,0 +1,61 @@
+.mdc-tab-wrapper {
+  .mdc-tab-bar {
+    .mdc-tab {
+      font-size: 0.75rem;
+      padding: 0px 6px;
+      font-weight: normal;
+      .mdc-tab__ripple{
+        &::before {
+          background-color: inherit;
+        }
+        &::after {
+          background-color: inherit;
+        }
+      }
+    }
+  }
+  .content {
+    display: none;
+    padding: 18px 0;
+  }
+  .content--active {
+    display: block;
+  }
+  @each $color, $value in $theme-colors {
+    &.mdc-tab--#{$color}
+      .mdc-tab-bar {
+        .mdc-tab-scroller {
+          .mdc-tab-scroller__scroll-content {
+            .mdc-tab {
+              &.mdc-tab--active {
+                .mdc-tab__content {
+                  .mdc-tab__text-label {
+                    color: $value;
+                  }
+                }
+                .mdc-tab-indicator {
+                  .mdc-tab-indicator__content--underline {
+                    border-color: $value;
+                  }
+                }
+                .mdc-tab__ripple {
+                  &::before,
+                  &::after {
+                    background: $value;
+                  }
+                }
+              }
+              .mdc-tab__ripple {
+                &:hover {
+                  &::before,
+                  &::after {
+                    background: $value;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+}

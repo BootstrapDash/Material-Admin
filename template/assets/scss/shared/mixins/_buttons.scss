@@ -1,0 +1,28 @@
+
+@each $color, $value in $theme-colors {
+  .mdc-button--#{$color} {
+    @include mdc-button-filled-accessible($value);
+  }
+}
+
+.mdc-button--light,
+.mdc-button--white {
+  @include mdc-button-ink-color(#000);
+}
+
+.mdc-button {
+  &.mdc-button--bg-transparent {
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.09);
+  }
+}
+
+
+@each $color, $value in $theme-colors {
+  .mdc-button {
+    &.mdc-button--#{$color}-shadow {
+      @include mdc-button-filled-accessible($value);      
+      box-shadow: 0 0 10px 5px rgba($value, .35);
+    }
+  }
+}

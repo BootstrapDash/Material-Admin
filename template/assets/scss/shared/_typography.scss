@@ -1,0 +1,75 @@
+/* Typography */
+body {
+  font-size: 1rem;
+  font-family: $type1;
+  font-weight: initial;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-size: $default-font-size;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  line-height: 1.5rem;
+}
+
+.h1,
+.mdc-typography--headline1,
+h1 {
+  font-size: 2.19rem;
+}
+
+.h2,
+.mdc-typography--headline2,
+h2 {
+  font-size: 1.625rem;
+}
+
+.h3,
+.mdc-typography--headline3,
+h3 {
+  font-size: 1.4375rem;
+}
+
+.h4,
+.mdc-typography--headline4,
+h4 {
+  font-size: 1.25rem;
+}
+
+.h5,
+.mdc-typography--headline5,
+h5 {
+  font-size: 1rem;
+}
+
+.h6,
+.mdc-typography--headline6,
+h6 {
+  font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  font-size: $default-font-size;
+}
+
+.blockquote {
+  padding: 1.25rem;
+  border: 1px solid $border-color;
+}
+
+address {
+  p {
+    margin-bottom: 0;
+  }
+}
